@@ -31,6 +31,7 @@ async function funIngresar() {
     console.log(data.access_token);
     localStorage.setItem("access_token", data.access_token);
     router.push("/servicios");
+    router.push("/admin/perfil");
   } catch (error) {
     console.log(error.response.data);
     if (error.response.data.errors) {
